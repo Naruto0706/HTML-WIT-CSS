@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>  
+  <title>Personal Portfolio website design using html css</title>
+<style type="text/css">
+    *{padding: 0; box-sizing: border-box;}
+    header{
+        width: 100%
+        height: 100vh;
+        front-famaly: sans-serif;
+    }
+    nav{
+       width: 100%;
+       height: 100px;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+    }
+    .logo{
+        font-size: 2em;
+    }
+    .logo span{
+        color: skyblue;
+    }
+    .menu a{
+        text-decoration: none;
+        color: black;
+        padding: 10px 20px;
+        position: relative;
+    }
+    .menu a:before{
+        content: '';
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        border-top: 2px solid black;
+        transition: 0.4s linear;
+    }
+    .menu a:hover:before{
+        width: 100%;
+    }
+    .h-text{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .h-text h1{
+        font-size: 3em;	
+    }
+    .h-text a{
+        text-decoration: none;
+        background: black;
+        color: white;
+        padding: 10px 20px;
+        letter-spacing: 5px;
+        position: relative;
+    }
+    .h-text a:before{
+    content: '';
+    position: absolute;
+    top:10px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    background: skyblue;
+    z-index: -1;
+    border:1px solid black;
+}
+#man{
+   position: absolute;
+   left: 450px;
+}
+</style>
+</head>
+<body>
+<header>
+    <nav>
+      <div class="logo">
+        IT<span>Assignment</span>
+      </div>
+      <div class="menu">
+           <a href="#">Home</a>
+           <a href="Other Folder/my marksheet.jpg">Education</a>
+           <a href="Other Folder/My Skills.docx">Skills</a>
+           <a href="contact me html.html">Contact</a>
+      </div>
+    </nav>
+     <section class="h-text">
+       <div class="left">
+               <p>I'm a</p>
+           <h1>Manidwiptam <span style="color: skyblue;">Halder</span></h1>
+            <p>Now I am stydying Electrical Engineering from Ranaghat Govt. Polytechnic.My Reg.N0 - D2021116556</p>
+                <br>            <br>
+            <a href="Other Folder/MY CV for html.docx">Download CV</a>
+        </div>
+        <div class="right">
+
+            <img src="Other Folder/Back 2.jpg" width="500"
+        </div>
+    </section>
+    <img src="Other Folder/Back 1.gif" width="200" id="man">
+</header>
+</body>
+</html>
